@@ -5,50 +5,50 @@
             <div class="row">
                 <div class="col col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 gy-3">
                     <label for="" class="form-label">EMPLOYEE CODE</label>
-                    <input type="text" class="form-control" placeholder="Employee code">
+                    <input type="text" class="form-control" placeholder="Employee code" name="employeeCode" [(ngModel)] = "employeeCode">
                 </div>
                 <div class="col col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 gy-3">
                     <label for="" class="form-label">EMPLOYEE NAME</label>
-                    <input type="text" class="form-control" placeholder="Employee Name">
+                    <input type="text" class="form-control" placeholder="Employee Name" name="employeeName" [(ngModel)] = "employeeName">
                 </div>
                 <div class="col col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 gy-3">
                     <label for="" class="form-label">DESIGNATION</label>
-                    <input type="text" class="form-control" placeholder="Designation">
+                    <input type="text" class="form-control" placeholder="Designation" name="designation" [(ngModel)] = "designation">
                 </div>
                 <div class="col col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 gy-3">
                     <label for="" class="form-label">GENDER</label>
-                    <select name="" id="" class="form-control">
+                    <select name="gender" [(ngModel)] = "gender" id="" class="form-control">
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                     </select>
                 </div>
                 <div class="col col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 gy-3">
                     <label for="" class="form-label">COMPANY NAME</label>
-                    <input type="text" class="form-control" placeholder="Company Name">
+                    <input type="text" class="form-control" placeholder="Company Name" name="companyName" [(ngModel)] = "companyName">
                 </div>
                 <div class="col col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 gy-3">
                     <label for="" class="form-label">SALARY</label>
-                    <input type="text" class="form-control" placeholder="Salary">
+                    <input type="text" class="form-control" placeholder="Salary" name="salary" [(ngModel)] = "salary">
                 </div>
                 <div class="col col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 gy-3">
                     <label for="" class="form-label">COMPANY ADDRESS</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Company Address"></textarea>
+                    <textarea name="companyAddress" [(ngModel)] = "companyAddress" id="" cols="30" rows="10" class="form-control" placeholder="Company Address"></textarea>
                 </div>
                 <div class="col col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 gy-3">
                     <label for="" class="form-label">MOBILE NUMBER</label>
-                    <input type="text" class="form-control" placeholder="Mobile Number">
+                    <input type="text" class="form-control" placeholder="Mobile Number" name="mobileNumber" [(ngModel)] = "mobileNumber">
                 </div>
                 <div class="col col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 gy-3">
                     <label for="" class="form-label">COMPANY EMAIL-ID</label>
-                    <input type="text" class="form-control" placeholder="Company Email-Id">
+                    <input type="text" class="form-control" placeholder="Company Email-Id" name="companyEmail" [(ngModel)] = "companyEmail">
                 </div>
                 <div class="col col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 gy-3">
                     <label for="" class="form-label">YEAR OF EXPERIENCE</label>
-                    <input type="text" class="form-control" placeholder="Year Of Experience">
+                    <input type="text" class="form-control" placeholder="Year Of Experience" name="yearOfExperience" [(ngModel)] = "yearOfExperience">
                 </div>
                 <div class="col col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 gy-3">
                     <label for="" class="form-label">BLOOD GROUP</label>
-                    <select name="" id="" class="form-control">
+                    <select name="bloodGroup" [(ngModel)] = "bloodGroup" id="" class="form-control">
                         <option value="A+">A+</option>
                         <option value="A-">A-</option>
                         <option value="B+">B+</option>
@@ -61,10 +61,10 @@
                 </div>
                 <div class="col col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 gy-3">
                     <label for="" class="form-label">DATE OF BIRTH</label>
-                    <input type="date" class="form-control">
+                    <input type="date" class="form-control" name="dateOfBirth" [(ngModel)] = "dateOfBirth">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 gy-3">
-                    <button class="btn btn-primary">SUBMIT</button>
+                    <button class="btn btn-primary" (click) = "readValues()">SUBMIT</button>
                 </div>
             </div>
         </div>
